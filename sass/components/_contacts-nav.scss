@@ -1,0 +1,39 @@
+.contacts-nav .link {
+  color: $title-text-color;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: fill 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-nav .contacts-link {
+  display: flex;
+  align-items: center;
+  fill: $title-text-color;
+}
+
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+
+  & a:hover,
+  & a:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.contacts-nav .item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contacts-icon {
+  margin-right: 10px;
+}
+
+.logo-part {
+  color: $primary-text-color;
+}

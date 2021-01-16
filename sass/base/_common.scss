@@ -1,0 +1,66 @@
+body {
+  padding-top: 80px;
+  color: $primary-text-color;
+
+  font-family: $primary-font;
+  letter-spacing: 0.03em;
+}
+
+/* утилиты */
+.container {
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.card-image {
+  display: block;
+  overflow: hidden;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a,
+.logo,
+.link {
+  text-decoration: none;
+}
+
+/* цвет основного текста background: #212121 
+*/
+/* вторичный цвет текста  #757575 */
+
+/*  белый #FFFFFF */
+/* акцент #2196F3 */
+
+/* цвет фона основной секции и футера #2F303A */
+/* цвет фона чем мы занимаемся #2F303A */
+/* цвет фона наша команда #F5F4FA */

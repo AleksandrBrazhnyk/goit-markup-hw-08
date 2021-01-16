@@ -1,0 +1,119 @@
+/* footer */
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.address-text {
+  color: $hero-text-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.logo-footer {
+  color: $hero-text-color;
+}
+
+.link.footer {
+  margin-top: 9px;
+  color: $address-link-footer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-bg {
+  background-color: $hero-footer-bg;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* join */
+.footer-bg .container {
+  // display: flex;
+  // align-items: baseline;
+  text-align: center;
+}
+// .footer-bg .join-section {
+//   margin-left: 70px;
+// }
+
+.social-networks .link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  fill: $hero-text-color;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: $accent-color;
+  }
+}
+
+.join-text {
+  margin-bottom: 20px;
+  color: $hero-text-color;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.form-field.footer {
+  // margin-left: 93px;
+  margin-bottom: 20px;
+}
+
+.form-field .form-text-footer {
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  color: $hero-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.form-input-footer::placeholder {
+  width: 47px;
+  height: 20px;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1, 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: $address-link-footer;
+}
+
+.form-field .form-input-footer {
+  // width: 358px;
+  width: 450px;
+  height: 50px;
+  padding-left: 16px;
+  // margin-bottom: 0;
+  margin-bottom: 20px;
+  left: 0;
+  top: 0;
+
+  background: $hero-footer-bg;
+  color: $address-link-footer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
