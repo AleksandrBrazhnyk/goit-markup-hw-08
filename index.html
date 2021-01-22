@@ -20,32 +20,37 @@
       <div class="container">
       <nav class="top-line">
         <a href="/index.html" class="logo"> Web<span class="logo-part">Studio</span> </a>
-            <!-- <button type="button">
-              <svg>
-                <use href=""></use>
+            <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+              <svg width="40" height="40" aria-label="Переключателб мобильного меню">
+                <use class="icon-burger" href="./images/burger-sprite.svg#icon-menu-burger"></use>
+                <use class="icon-close" href="./images/burger-sprite.svg#icon-menu-close"></use>
               </svg>
-            </button> -->
-        <ul class="site-nav">
-          <li class="item"><a href="" class="link current">Студия</a></li>
-          <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
-        </ul>
+            </button>
+            <div class="menu-container is-open" id="menu-container" data-menu>
+                <ul class="site-nav">
+                  <li class="item"><a href="" class="link current">Студия</a></li>
+                  <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                  <li class="item"><a href="" class="link">Контакты</a></li>
+                </ul>
+                
+                <ul class="contacts-nav">
+                  <li class="item">
+                    <a class="link contacts-link" href="mailto:info@devstudio.com">
+                      <svg class="contacts-icon" width="16" height="12">
+                        <use href="./images/sprite-icon.svg#icon-envelope"></use>
+                      </svg>
+                      info@devstudio.com</a>
+                  </li>
+                  <li class="item">
+                    <a class="link contacts-link" href="tel:+380961111111">
+                      <svg class="contacts-icon" width="10" height="16">
+                        <use href="./images/sprite-icon.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 096 111 11 11</a>
+                  </li>
+                </ul>
+            </div>
       </nav>
-      <ul class="contacts-nav">
-        <li class="item">
-          <a class="link contacts-link" href="mailto:info@devstudio.com">
-            <svg class="contacts-icon" width="16" height="12">
-              <use href="./images/sprite-icon.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="item">
-          <a class="link contacts-link" href="tel:+380961111111"> 
-            <svg class="contacts-icon" width="10" height="16">
-              <use href="./images/sprite-icon.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a></li>
-      </ul>
       
       </div>
     </header>   
@@ -480,7 +485,9 @@
 
       document.body.style.paddingTop = '${pageHeaderHeight}px';
     </script>
+    
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
 <script>
 (() => {
