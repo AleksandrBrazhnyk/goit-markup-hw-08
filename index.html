@@ -129,16 +129,32 @@
         <h2 class="work-section">Чем мы занимаемся</h2>
         <ul class="work-container">
           <li class="work-elements">
-            <img class="card-image" src="./images/img.jpg" alt="Руки на клавиатуре" width="370"/>
+            <picture>
+              <source media="(min-width: 1200px)" 
+                      srcset="./images/index/desktop/desctop-app.jpg 1x,
+                             ./images/index/desktop/desctop-app@2x.jpg 2x"/> 
+              <img class="card-image" src="/images/index/desktop/desctop-app.jpg" alt="Руки на клавиатуре" />
+            </picture>
+            <!-- <img class="card-image" src="./images/img.jpg" alt="Руки на клавиатуре" width="370"/> -->
             <p class="work-tekst">Десктопные приложения</p>
           </li>
 
           <li class="work-elements">
-            <img class="card-image" src="./images/img-2.jpg" alt="Мобильный в руках" width="370"/>
+            <source media="(min-width: 1200px)" 
+                    srcset="./images/index/desktop/mob-app.jpg 1x,
+                            ./images/index/desktop/mob-app@2x.jpg 2x" />
+            <img class="card-image" src="/images/index/desktop/mob-app.jpg" alt="Мобильный в руках" />
+            </picture>
+            <!-- <img class="card-image" src="./images/img-2.jpg" alt="Мобильный в руках" width="370"/> -->
             <p class="work-tekst">Мобильные приложения</p>
           </li>
           <li class="work-elements">
-            <img class="card-image" src="./images/img-3.jpg" alt="Планшет в руках" width="370"/>
+            <source media="(min-width: 1200px)" 
+                    srcset="./images/index/desktop/design.jpg 1x,
+                            ./images/index/desktop/design@2x.jpg 2x" />
+            <img class="card-image" src="/images/index/desktop/design.jpg" alt="Планшет в руках" />
+            </picture>
+            <!-- <img class="card-image" src="./images/img-3.jpg" alt="Планшет в руках" width="370"/> -->
             <p class="work-tekst">Дизайнерские решения</p>
           </li>
         </ul>
@@ -150,10 +166,23 @@
         <h2 class="team-name">Наша команда</h2>
         <ul class="team-container">
           <li class="team-elements">
-            <img class="card-image"
+
+            <picture>
+              <source  media="(min-width: 1200px)"
+                       srcset="./images/index/desktop/igor.jpg 1x,
+                                ./images/index/desktop/igor@2x.jpg 2x"/>
+              <source  media="(min-width: 768px)"
+                       srcset=  "./images/index/tablet/igor.jpg 1x,
+                                  ./images/index/tablet/igor@2x.jpg 2x"/>
+              <source   media="(max-width: 767px)"
+                        srcset="./images/index/mobile/igor.jpg 1x,
+                                ./images/index/mobile/igor@2x.jpg 2x"/>
+              <img class="card-image" src="/images/index/mobile/igor.jpg" alt="Игорь Демьяненко" />
+            </picture>
+            <!-- <img class="card-image"
               src="./images/Игорь.jpg"
               alt="фото Игорь Демьяненко"
-              width="270"/>
+              width="270"/> -->
               <div class="content-team">
             <h3 class="team-section">Игорь Демьяненко</h3>
             <p class="team-title">Product Designer</p>
@@ -190,7 +219,19 @@
             </div>
           </li>
           <li class="team-elements">
-            <img class="card-image" src="./images/Ольга.jpg" alt="фото Ольга Репина" width="270"/>
+            <picture>
+              <source media="(min-width: 1200px)" 
+                      srcset="./images/index/desktop/olga.jpg.jpg 1x,
+                              ./images/index/desktop/olga@2x.jpg 2x" />
+              <source media="(min-width: 768px)" 
+                      srcset="./images/index/tablet/olga.jpg 1x,
+                              ./images/index/tablet/olga@2x.jpg 2x" />
+              <source media="(max-width: 767px)" 
+                       srcset="./images/index/mobile/olga.jpg 1x,
+                               ./images/index/mobile/olga@2x.jpg 2x" />
+              <img class="card-image" src="./images/index/mobile/olga.jpg" alt="Ольга Репина" />
+            </picture>
+            <!-- <img class="card-image" src="./images/Ольга.jpg" alt="фото Ольга Репина" width="270"/> -->
             <div class="content-team">
             <h3 class="team-section">Ольга Репина</h3>
             <p class="team-title">Frontend Developer</p>
@@ -227,7 +268,16 @@
             </div>
           </li>
           <li class="team-elements">
-            <img class="card-image" src="./images/Коля.jpg" alt="фото Николай Тарасов" width="270">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/index/desktop/nikolai.jpg.jpg 1x,
+                                                      ./images/index/desktop/nikolai@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="./images/index/tablet/nikolai.jpg 1x,
+                                                      ./images/index/tablet/nikolai@2x.jpg 2x" />
+              <source media="(max-width: 767px)" srcset="./images/index/mobile/nikolai.jpg 1x,
+                                                       ./images/index/mobile/nikolai@2x.jpg 2x" />
+              <img class="card-image" src="./images/index/mobile/nikolai.jpg" alt="Николай Тарасов" />
+            </picture>
+            <!-- <img class="card-image" src="./images/Коля.jpg" alt="фото Николай Тарасов" width="270"> -->
             <div class="content-team">
             <h3 class="team-section">Николай Тарасов</h3>
             <p class="team-title">Marketing</p>
@@ -264,10 +314,19 @@
             </div>
           </li>
           <li class="team-elements">
-            <img class="card-image"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/index/desktop/mihail.jpg.jpg 1x,
+                                          ./images/index/desktop/mihail@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="./images/index/tablet/mihail.jpg 1x,
+                                          ./images/index/tablet/mihail@2x.jpg 2x" />
+              <source media="(max-width: 767px)" srcset="./images/index/mobile/mihail.jpg 1x,
+                                           ./images/index/mobile/mihail@2x.jpg 2x" />
+              <img class="card-image" src="./images/index/mobile/mihail.jpg" alt="Михаил Ермаков" />
+            </picture>
+            <!-- <img class="card-image"
               src="./images/Михаил.jpg"
               alt="фото Михаил Ермаков"
-              width="270"/>
+              width="270"/> -->
               <div class="content-team">
             <h3 class="team-section">Михаил Ермаков</h3>
             <p class="team-title">UI Designer</p>
