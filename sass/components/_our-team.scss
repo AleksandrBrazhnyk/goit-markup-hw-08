@@ -3,26 +3,30 @@
 .team-container {
   // display: flex;
   display: block;
-  margin: -15px;
 
   @media screen and (min-width: 768px) {
     display: inline-flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 .team-name {
-  // margin-bottom: 50px;
   margin-bottom: 30px;
   color: $primary-text-color;
 
   font-style: normal;
   font-weight: 700;
-  // font-size: 36px;
+
   font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team-elements {
